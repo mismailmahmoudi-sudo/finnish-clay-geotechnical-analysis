@@ -1,156 +1,57 @@
-
 # Finnish Clay Geotechnical Analysis
 
-## 1. GENERAL INFORMATION
+**Course:** ING8100 — Open and Reproducible Science, Polytechnique Montréal  
+**Project status:** Analysis completed
 
-### 1.1 Title of Dataset
+## 1. General Information
 
-Geotechnical Properties of Four Finnish Clay Deposits (Haarajoki, Suurpelto, Tolsa, POKO) — Reorganized Version of the Löfman and Korkiala-Tanttu (2021) Dataset.
+### Dataset and Project Description
 
-### 1.2 Project Description
+**Dataset:** *Geotechnical Properties of Four Finnish Clay Deposits (Haarajoki, Suurpelto, Tolsa, POKO) — Reorganized Version of the Löfman and Korkiala-Tanttu (2021) Dataset.*
 
-This project aims to analyze and compare the geotechnical properties of four Finnish clay deposits: Haarajoki, Suurpelto, Tolsa, and POKO.
-
-The dataset contains laboratory measurements related to soil classification, water content, Atterberg limits, undrained shear strength, compressibility, and consolidation characteristics.
-
-The project is developed as part of Laboratory 3 — Open and Reproducible Science (ING8100) at Polytechnique Montréal.
-
-The main objective is to establish a reproducible data analysis workflow using Python, Git, and GitHub.
-
-### 1.3 Author Information
-
-**Original dataset authors:**
-
-- Monica Susanne Löfman
-- Leena Korkiala-Tanttu
+This project compares selected geotechnical properties of four Finnish clay deposits using publicly available laboratory measurements. Developed for Laboratory 3 of ING8100, it demonstrates a reproducible workflow combining automated data acquisition, preprocessing, statistical analysis, visualization, and collaborative development through GitHub.
 
 **Project contributors:**
+- [mismailmahmoudi-sudo](https://github.com/mismailmahmoudi-sudo)
+- [yassinemougli02](https://github.com/yassinemougli02)
 
-- Main contributor: Mohamed Ismail Mahmoudi
-- Second contributor: Yassine Mougli
-- Institution: Polytechnique Montréal
-- Course: ING8100 — Open and Reproducible Science
+**Source dataset authors:** Monica Susanne Löfman and Leena Korkiala-Tanttu.
 
-### 1.4 Geographic Coverage
+**Institution:** Polytechnique Montréal, Canada.
 
-The dataset covers four Finnish clay deposits:
+**Geographic coverage:** Haarajoki, Suurpelto, Tolsa, and POKO, Finland.
 
-- Haarajoki
-- Suurpelto
-- Tolsa
-- POKO
+**Original research:** 2021.  
+**Reorganized Borealis dataset:** 2026 (version 2.1 at the time of initial documentation).
 
-### 1.5 Date of Data Collection
+The original data collection dates and funding sources were not established from the metadata consulted.
 
-- Original data collection period: To be verified from the original publication.
-- Original dataset publication: 2021.
-- Reorganized dataset publication: 2026.
+**Keywords:** Geotechnical engineering, Finnish clay, water content, undrained shear strength, unit weight, reproducible research.
 
-### 1.6 Funding Sources
+## 2. Sharing and Access Information
 
-Funding information is not specified in the available dataset metadata.
+The dataset is publicly available through the Borealis demonstration repository.
 
-### 1.7 Keywords
+- **Borealis dataset:** https://demo.borealisdata.ca/dataset.xhtml?persistentId=doi:10.80240/FK2/DZGAMU
+- **Dataset DOI:** https://doi.org/10.80240/FK2/DZGAMU
+- **Original dataset:** https://doi.org/10.5281/zenodo.4709003
+- **Source data license:** Creative Commons Attribution 4.0 International (CC BY 4.0).
+- **Project code license:** MIT License (see `LICENSE`).
 
-Geotechnical engineering, Finnish clay, soil properties, laboratory testing, water content, Atterberg limits, undrained shear strength, oedometer tests, consolidation, reproducible research, Python.
+The original data are retrieved programmatically from Borealis and are not committed directly to GitHub. The Borealis demonstration instance is intended for testing and may not provide permanent availability.
 
----
+**Related publication:**
 
-## 2. SHARING AND ACCESS INFORMATION
+Löfman, M. S., & Korkiala-Tanttu, L. (2021). *Transformation models for the compressibility properties of Finnish clays using a multivariate database*. Georisk. https://doi.org/10.1080/17499518.2020.1864410
 
-### 2.1 Dataset Availability
+## 3. Data and File Overview
 
-The dataset is publicly accessible through Borealis Demo.
+The main laboratory dataset contains **375 observations and 50 variables**. The source collection includes additional soil-layer and oedometer measurements, but this project analyzes the main laboratory dataset.
 
-**Dataset DOI:**
-
-https://doi.org/10.80240/FK2/DZGAMU
-
-**Borealis repository:**
-
-https://demo.borealisdata.ca/dataset.xhtml?persistentId=doi:10.80240/FK2/DZGAMU
-
-The project is designed to retrieve data automatically from Borealis instead of storing the original dataset directly in the GitHub repository.
-
-### 2.2 Data License
-
-The original dataset is distributed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
-
-The original authors must be appropriately acknowledged when the data are reused.
-
-The GitHub project's original code is licensed separately under the MIT License.
-
-### 2.3 Related Publication
-
-Löfman, M. S., and Korkiala-Tanttu, L. (2021).
-
-*Transformation models for the compressibility properties of Finnish clays using a multivariate database.*
-
-Georisk.
-
-DOI: https://doi.org/10.1080/17499518.2020.1864410
-
-### 2.4 Original Data Source
-
-The reorganized dataset is based on the original dataset published by Löfman and Korkiala-Tanttu (2021), available through Zenodo.
-
-DOI: https://doi.org/10.5281/zenodo.4709003
-
-### 2.5 Recommended Dataset Citation
-
-Löfman, Monica Susanne; Korkiala-Tanttu, Leena (2026).
-
-*Propriétés géotechniques de quatre dépôts d'argile finlandais (Haarajoki, Suurpelto, Tolsa, POKO) — version réorganisée du jeu de Löfman et Korkiala-Tanttu (2021).*
-
-Borealis.
-
-https://doi.org/10.80240/FK2/DZGAMU
-
----
-
-## 3. DATA AND FILE OVERVIEW
-
-### 3.1 Dataset Description
-
-The main laboratory dataset contains:
-
-- 375 observations
-- 50 variables
-- Geotechnical measurements from four Finnish clay deposits
-- Laboratory test results related to physical, mechanical, and consolidation properties
-
-### 3.2 Main Data Files
-
-| Filename | Format | Description |
-|---|---|---|
-| Laboratory_data.xlsx | XLSX | Original laboratory measurements |
-| laboratory_data.csv | CSV | Converted laboratory dataset |
-| layer_statistics.csv | CSV | Statistical information organized by soil layer |
-| oedometer_increments_creep_cv.csv | CSV | Oedometer consolidation and creep information |
-| convert_xlsx_to_csv.py | Python | Conversion script from Excel to CSV |
-| compute_layer_statistics.py | Python | Script for calculating layer statistics |
-| requirements.txt | TXT | Python dependencies provided with the Borealis dataset |
-| README.md | Markdown | Original dataset documentation |
-| LICENSE.txt | TXT | Data license information |
-| MD5SUMS.txt | TXT | File integrity checksums |
-
-The complete list of Borealis files will be verified and documented as the project develops.
-
-### 3.3 Dataset Dimensions
-
-| Dataset | Observations | Variables |
-|---|---:|---:|
-| laboratory_data.csv | 375 | 50 |
-| layer_statistics.csv | 79 | 11 |
-| oedometer_increments_creep_cv.csv | 113 | 17 |
-
-### 3.4 Project Directory Structure
-
-The project will follow the directory structure below:
+### Repository Structure
 
 ```text
 finnish-clay-geotechnical-analysis/
-│
 ├── README.md
 ├── LICENSE
 ├── CODE_OF_CONDUCT.md
@@ -159,284 +60,131 @@ finnish-clay-geotechnical-analysis/
 ├── environment.yml
 ├── .gitignore
 ├── report.md
-│
 ├── data/
 │   ├── raw/
 │   └── processed/
-│
 ├── scripts/
 │   ├── download_data.py
 │   ├── preprocess.py
 │   └── analyze.py
-│
 ├── notebooks/
 ├── figures/
+│   ├── mean_water_content.png
+│   └── undrained_strength_boxplot.png
 └── results/
+    └── geotechnical_statistics.csv
 ```
 
-The structure separates raw data, processed data, Python scripts, figures, and analysis results.
+The `data/raw/` and `data/processed/` directories contain locally generated data files, which are excluded from version control. Empty directories may be represented by `.gitkeep` files.
 
-The data directories will be populated through the project's scripts.
+## 4. Data Collection and Processing Methodology
 
-### 3.5 Dataset Versions
+The source dataset includes laboratory measurements from soil classification, fall cone, and oedometer tests. Detailed experimental procedures are available in the original research documentation.
 
-The Borealis dataset currently displays version 2.1.
+The project implements three Python scripts:
 
-Detailed changes between versions will be verified using the Borealis version history.
+1. **Data download — `scripts/download_data.py`:** Retrieves the laboratory dataset from the Borealis API and saves it as `data/raw/Laboratory_data.xlsx`.
+2. **Preprocessing — `scripts/preprocess.py`:** Standardizes column names, removes unnecessary whitespace, identifies missing-value markers, and exports `data/processed/laboratory_data_clean.csv` while preserving the original 375 observations.
+3. **Analysis — `scripts/analyze.py`:** Calculates descriptive statistics and generates comparative figures, saving outputs in `results/` and `figures/`.
 
----
+The analysis uses Python 3.11, Pandas, NumPy, Matplotlib, OpenPyXL, and Requests. Dependencies are defined in `environment.yml`.
 
-## 4. DATA COLLECTION AND PROCESSING METHODOLOGY
+## 5. Data-Specific Information
 
-### 4.1 Original Data Collection
+Three geotechnical parameters were selected for analysis:
 
-The dataset contains results from geotechnical laboratory investigations conducted on Finnish clay deposits.
+| Variable | Description | Unit | Available measurements |
+|---|---|---|---:|
+| `w0` | Natural water content | % | 369 |
+| `su` | Undrained shear strength (fall cone test) | kPa | 189 |
+| `gamma` | Unit weight | kN/m³ | 275 |
 
-The available laboratory measurements include:
+Variable definitions and units were verified using the Borealis data dictionary.
 
-- Soil classification
-- Water content
-- Atterberg limits
-- Unit weight
-- Grain-size distribution
-- Undrained shear strength
-- Oedometer compression
-- Consolidation properties
-- Creep-related parameters
+Missing measurements are excluded from the relevant statistical calculations without removing entire observations from the dataset. Consequently, sample sizes differ between variables and deposits.
 
-Detailed experimental procedures can be consulted in the original scientific publications.
+## 6. Research Question and Analysis
 
-### 4.2 Automated Data Download
+**Research question:** How do the geotechnical properties vary among the four Finnish clay deposits?
 
-The dataset will be downloaded from Borealis using the Python script:
+For each deposit, the analysis calculates three descriptive statistics: the number of valid measurements, arithmetic mean, and standard deviation.
 
-`scripts/download_data.py`
+Two figures are generated:
 
-Downloaded files will be stored in:
+- **Figure 1:** Mean natural water content (%) by clay deposit.
+- **Figure 2:** Distribution of undrained shear strength (kPa) by clay deposit.
 
-`data/raw/`
+The analysis shows differences between the deposits. Suurpelto exhibits the highest mean natural water content and lowest mean unit weight, while Tolsa shows the opposite pattern. Haarajoki has the highest mean undrained shear strength.
 
-This procedure aims to make data acquisition reproducible.
+The detailed results, figures, scientific interpretation, and limitations are presented in the [scientific report](report.md).
 
-### 4.3 Data Preprocessing
+## 7. Reproducibility and Usage
 
-The script:
+### Requirements
 
-`scripts/preprocess.py`
+Install Git and Anaconda or Miniconda. An internet connection is required to download the original dataset.
 
-will perform the following operations when appropriate:
+### Installation and Execution
 
-1. Identify and handle missing values.
-2. Verify and correct data types.
-3. Standardize column names.
-4. Detect inconsistent measurements.
-5. Prepare the dataset for statistical analysis.
+Open Anaconda Prompt or a terminal, then execute:
 
-Processed files will be saved in:
+```bash
+# Clone the repository
+git clone https://github.com/mismailmahmoudi-sudo/finnish-clay-geotechnical-analysis.git
+cd finnish-clay-geotechnical-analysis
 
-`data/processed/`
+# Create and activate the environment
+conda env create -f environment.yml
+conda activate finnish-clay-env
 
-### 4.4 Statistical Analysis
+# Run the reproducible workflow
+python scripts/download_data.py
+python scripts/preprocess.py
+python scripts/analyze.py
+```
 
-The script:
+All Python commands must be executed from the project root directory. If the Conda environment already exists, skip the environment creation command.
 
-`scripts/analyze.py`
+### Generated Outputs
 
-will calculate statistical indicators and generate figures based on the research question.
+| Output file | Description |
+|---|---|
+| `data/raw/Laboratory_data.xlsx` | Original dataset downloaded from Borealis |
+| `data/processed/laboratory_data_clean.csv` | Cleaned laboratory dataset |
+| `results/geotechnical_statistics.csv` | Descriptive statistics |
+| `figures/mean_water_content.png` | Mean natural water content comparison |
+| `figures/undrained_strength_boxplot.png` | Undrained shear strength distribution |
 
-The analysis will use Python libraries including:
+The figures and interpretation are also available in [report.md](report.md).
 
-- Pandas
-- NumPy
-- Matplotlib
+## 8. Collaboration and Contributions
 
-### 4.5 Data Quality Assurance
+The project follows a collaborative GitHub workflow based on Issues, feature branches, descriptive commits, Pull Requests, and peer reviews.
 
-Quality control will include:
+The main development tasks were organized through:
 
-- Verification of dataset dimensions.
-- Identification of missing values.
-- Validation of numerical variables.
-- Documentation of preprocessing procedures.
-- Verification of generated results.
+- **Issue #3:** Automated Borealis data download.
+- **Issue #4:** Data preprocessing.
+- **Issue #5:** Statistical analysis and figure generation.
 
-### 4.6 Software Requirements
+Changes were reviewed before being merged into the protected `main` branch. The repository's commit and Pull Request history records contributions and approvals.
 
-The computational environment will use:
+Additional documentation:
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Conda
-- Git
-- GitHub
+- [CONTRIBUTING.md](CONTRIBUTING.md) — Contribution guidelines.
+- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — Collaboration and conduct expectations.
+- [AI_Prompts.md](AI_Prompts.md) — Documentation of generative AI assistance.
 
-Exact package versions will be specified in `environment.yml`.
+## 9. Reuse Limitations and Acknowledgements
 
-### 4.7 Data Limitations
+This project is a secondary analysis of previously collected laboratory data. The results are descriptive and should not be used directly as engineering design parameters.
 
-The analysis is limited to the geotechnical measurements available in the dataset.
+Differences in sample sizes, sampling depths, soil layers, and testing conditions may influence comparisons between deposits.
 
-Differences in testing conditions, sample characteristics, and available measurements may affect comparisons between the clay deposits.
+The original research and dataset are credited to **Löfman and Korkiala-Tanttu**. Source data reuse is governed by CC BY 4.0, while the repository code is distributed under the MIT License.
 
----
-
-## 5. DATA-SPECIFIC INFORMATION
-
-### 5.1 Main Laboratory Dataset
-
-**Filename:** `laboratory_data.csv`
-
-**Number of observations:** 375
-
-**Number of variables:** 50
-
-The dataset contains geotechnical laboratory measurements from the four Finnish clay deposits.
-
-The exact variable names, units, and missing-value conventions will be documented after inspection of the CSV file.
-
-### 5.2 Layer Statistics Dataset
-
-**Filename:** `layer_statistics.csv`
-
-**Number of observations:** 79
-
-**Number of variables:** 11
-
-This dataset provides statistical information associated with soil layers.
-
-### 5.3 Oedometer Dataset
-
-**Filename:** `oedometer_increments_creep_cv.csv`
-
-**Number of observations:** 113
-
-**Number of variables:** 17
-
-This dataset contains oedometer-related information, including consolidation and creep parameters.
-
-### 5.4 Missing Values and Units
-
-Missing-value codes, engineering units, and variable definitions will be verified before conducting the statistical analysis.
+The project acknowledges Borealis for research data sharing and GitHub for supporting collaborative and reproducible development.
 
 ---
 
-## 6. RESEARCH QUESTION AND OBJECTIVES
-
-### 6.1 Research Question
-
-**How do the geotechnical properties vary among the four Finnish clay deposits?**
-
-### 6.2 Research Objectives
-
-1. Compare the geotechnical properties of the four deposits.
-2. Calculate relevant statistical indicators.
-3. Identify differences and variability between deposits.
-4. Generate comparative visualizations.
-5. Document the workflow to ensure reproducibility.
-
-### 6.3 Statistical Indicators
-
-The proposed indicators are:
-
-1. Mean water content for each clay deposit.
-2. Mean plasticity index for each clay deposit.
-3. Mean undrained shear strength for each clay deposit.
-
-The final selection will depend on the variables available in the dataset.
-
-### 6.4 Visualizations
-
-The analysis aims to generate:
-
-**Figure 1:** Bar chart comparing mean water content across the four clay deposits.
-
-**Figure 2:** Box plot comparing the distribution of undrained shear strength.
-
-Each figure will include appropriate titles, axis labels, units, and interpretations.
-
----
-
-## 7. REPRODUCIBILITY
-
-### 7.1 Computational Environment
-
-A reproducible Python environment will be created using Conda.
-
-The required dependencies will be documented in:
-
-`environment.yml`
-
-### 7.2 Reproducing the Analysis
-
-Once implementation is complete, users will be able to reproduce the workflow by:
-
-1. Cloning the GitHub repository.
-2. Creating the Python environment.
-3. Downloading the data from Borealis.
-4. Executing the preprocessing script.
-5. Executing the analysis script.
-6. Examining the generated results and figures.
-
-Exact installation and execution commands will be added after the scripts have been implemented and tested.
-
-### 7.3 Expected Outputs
-
-The project is expected to generate:
-
-- Processed datasets.
-- Statistical indicators.
-- Comparative figures.
-- A Markdown report presenting and interpreting the results.
-
----
-
-## 8. COLLABORATIVE DEVELOPMENT
-
-The project follows a collaborative GitHub workflow.
-
-Team members will:
-
-1. Create GitHub Issues to organize tasks.
-2. Assign tasks to project contributors.
-3. Develop modifications on separate branches.
-4. Use descriptive commit messages.
-5. Submit Pull Requests.
-6. Review changes before merging into the `main` branch.
-
-At least three Issues will be created, with at least one assigned to each team member.
-
-At least one Issue will be closed through a Pull Request.
-
-Each Pull Request will require at least one review before merging.
-
-Contribution guidelines will be provided in:
-
-`CONTRIBUTING.md`
-
----
-
-## 9. LICENSE AND ACKNOWLEDGEMENTS
-
-The original code developed for this GitHub project is released under the MIT License.
-
-The original Borealis dataset is distributed under the CC BY 4.0 license.
-
-The project acknowledges Löfman and Korkiala-Tanttu for making the geotechnical dataset available for research.
-
-This project is developed for educational purposes as part of ING8100 at Polytechnique Montréal.
-
----
-
-## 10. DOCUMENTATION AND PROJECT STATUS
-
-Project documentation will be updated progressively as scripts, analyses, and results become available.
-
-The use of artificial intelligence tools during project development will be documented in:
-
-`AI_Prompts.md`
-
-**Project status:** In development.
-
-**Last documentation update:** To be completed.
+**Last updated:** November 2026.
