@@ -14,7 +14,7 @@ Contributions should follow the guidelines below to ensure collaboration, code q
 The project is developed by two team members:
 
 - Contributor 1: Mohamed Ismail Mahmoudi / mismailmahmoudi-sudo
-- Contributor 2: Yassine Mougli / Yassinemougli01
+- Contributor 2: Yassine Mougli / yassinemougli02
 
 Both contributors are responsible for completing assigned tasks, documenting their work, and reviewing each other's contributions.
 
