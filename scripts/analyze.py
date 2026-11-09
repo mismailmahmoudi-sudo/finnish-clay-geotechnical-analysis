@@ -30,7 +30,8 @@ INPUT_FILE = (
 RESULTS_DIR = PROJECT_ROOT / "results"
 FIGURES_DIR = PROJECT_ROOT / "figures"
 
-SITES = ["Haarajoki", "Suurpelto", "Tolsa", "POKO"]
+df = pd.read_csv(INPUT_FILE)
+SITES = df["site"].dropna().unique().tolist()
 VARIABLES = ["w0", "su", "gamma"]
 
 
